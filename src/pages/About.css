@@ -1,0 +1,698 @@
+.about-page {
+  --cream: #f5f2eb;
+  --dark: #22231f;
+  --gold: #e5b354;
+  --muted: #77766f;
+  background: var(--cream);
+  color: #142b49;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.about-page * {
+  box-sizing: border-box;
+}
+
+.about-page img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-page a {
+  text-decoration: none;
+}
+
+.about-hero {
+  min-height: 680px;
+  height: 88vh;
+  max-height: 900px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #252722;
+  color: white;
+  overflow: hidden;
+}
+
+.about-hero-image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 24, 45, 0.92),
+      rgba(8, 24, 45, 0.55),
+      rgba(8, 24, 45, 0.15)
+    ),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=90")
+      center / cover no-repeat;
+  opacity: 0.55;
+  transform: scale(1.02);
+  animation: heroZoom 12s ease-out forwards;
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1.12);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(8, 24, 45, 0.45), transparent 45%);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 10%;
+  max-width: 950px;
+}
+
+.eyebrow,
+.small-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #e5b354;
+}
+
+.about-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(52px, 7vw, 94px);
+  line-height: 1.06;
+  font-weight: 400;
+  letter-spacing: -3px;
+  margin: 30px 0;
+}
+
+.about-hero h1 span {
+  color: #e5b354;
+  font-style: italic;
+}
+
+.about-hero-content p {
+  font-size: 14px;
+  color: #d0d0ca;
+  max-width: 430px;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+.about-explore {
+  display: inline-flex;
+  gap: 25px;
+  align-items: center;
+  border: 1px solid white;
+  padding: 16px 27px;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.about-explore span {
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.about-explore:hover {
+  color: #142b49;
+  background: white;
+  /* gap: 35px; */
+}
+
+.hero-side-text {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  writing-mode: vertical-rl;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #d5c8b1;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 28px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #d1c8b9;
+}
+
+.company-section {
+  padding: 120px 10%;
+  background: white;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #e5b354;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.section-label span:first-child {
+  color: #e5b354;
+  font-size: 13px;
+}
+
+.company-top h2,
+.chairman-heading h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 30px 0 65px;
+}
+
+.company-top h2 span {
+  color: #e5b354;
+  font-style: italic;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 9%;
+}
+
+.company-image-wrap {
+  position: relative;
+  height: 570px;
+}
+
+.company-image-wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.company-description {
+  padding: 20px 0;
+}
+
+.company-description h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.2;
+  margin: 25px 0;
+}
+
+.company-description h3 em {
+  color: #e5b354;
+}
+
+.company-description p,
+.chairman-content p {
+  font-size: 13px;
+  line-height: 2;
+  color: #72716b;
+  margin-bottom: 20px;
+}
+
+.company-signature {
+  border-top: 1px solid #d9d3c7;
+  margin-top: 35px;
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-signature span:first-child {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.company-signature span:last-child {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #e5b354;
+}
+
+.vision-section {
+  padding: 110px 10%;
+  background: #142b49;
+}
+
+.vision-heading {
+  text-align: center;
+}
+
+.vision-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 22px 0 65px;
+  color: white;
+}
+
+.vision-heading h2 em {
+  color: #e5b354;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #ccc4b6;
+  border-bottom: 1px solid #ccc4b6;
+}
+
+.vision-card {
+  padding: 42px 32px;
+  min-height: 320px;
+  position: relative;
+  transition: background 0.4s;
+}
+
+.vision-card + .vision-card {
+  border-left: 1px solid #ccc4b6;
+}
+
+.vision-card:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.vision-number {
+  color: #e5b354;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.vision-symbol {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  color: #e5b354;
+  margin: 30px 0 20px;
+}
+
+.vision-card h3 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.vision-card p {
+  font-size: 12px;
+  line-height: 2;
+  color: rgb(242, 242, 242, 0.75);
+  max-width: 300px;
+}
+
+.card-line {
+  position: absolute;
+  bottom: 0;
+  left: 32px;
+  width: 35px;
+  height: 2px;
+  background: #e5b354;
+  transition: width 0.4s;
+}
+
+.vision-card:hover .card-line {
+  width: calc(100% - 64px);
+}
+
+.chairman-section {
+  padding: 120px 10%;
+  background: white;
+}
+
+.chairman-heading h2 {
+  margin-bottom: 70px;
+}
+
+.chairman-heading h2 em {
+  color: #e5b354;
+}
+
+.chairman-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 9%;
+  align-items: center;
+}
+
+.chairman-image {
+  position: relative;
+  height: 650px;
+  background: #ded8cb;
+}
+
+.chairman-image img {
+  height: 100%;
+  object-position: center top;
+}
+
+.chairman-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.chairman-content {
+  padding: 20px 0;
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+  color: #e5b354;
+  font-size: 100px;
+  height: 90px;
+  line-height: 1.3;
+  margin-top: 15px;
+}
+
+.chairman-content h3 {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 3.3vw, 42px);
+  line-height: 1.35;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.chairman-signature {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.signature-name {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-style: italic;
+  color: #e5b354;
+}
+
+.signature-line {
+  width: 100%;
+  height: 1px;
+  background: #d8d1c5;
+}
+
+.chairman-designation {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #77746d;
+}
+
+.about-closing {
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.closing-image {
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1494412574643-35d324698f65?auto=format&fit=crop&w=1800&q=85")
+    center / cover no-repeat;
+}
+
+.closing-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(20, 43, 73);
+}
+
+.closing-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 20px;
+}
+
+.closing-content > span {
+  color: #e5b354;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.closing-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 65px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 25px 0;
+}
+
+.closing-content h2 em {
+  color: #e5b354;
+}
+
+.closing-content p {
+  color: #c6c3ba;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.closing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  border: 1px solid var(--gold);
+  padding: 16px 27px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+/* .closing-link:hover {
+  color: var(--gold);
+  gap: 35px;
+} */
+
+.closing-link span {
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .company-section,
+  .chairman-section,
+  .vision-section {
+    padding: 90px 6%;
+  }
+
+  .company-grid,
+  .chairman-grid {
+    gap: 5%;
+  }
+
+  .company-image-wrap {
+    height: 480px;
+  }
+
+  .chairman-image {
+    height: 540px;
+  }
+
+  .vision-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero {
+    min-height: 650px;
+    height: 85vh;
+  }
+
+  .about-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(18, 20, 17, 0.9),
+      rgba(18, 20, 17, 0.55)
+    );
+  }
+
+  .about-hero-content {
+    padding: 0 7%;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(45px, 12vw, 65px);
+    letter-spacing: -2px;
+  }
+
+  .about-hero-content p {
+    font-size: 12px;
+  }
+
+  .hero-side-text {
+    right: 12px;
+    font-size: 8px;
+  }
+
+  .hero-bottom {
+    left: 7%;
+    right: 7%;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .company-section,
+  .chairman-section,
+  .vision-section {
+    padding: 75px 7%;
+  }
+
+  .company-top h2,
+  .chairman-heading h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+
+  .company-grid,
+  .chairman-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .company-image-wrap {
+    height: 390px;
+  }
+
+  .company-description h3 {
+    font-size: 42px;
+  }
+
+  .vision-heading h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+
+  .vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-card {
+    min-height: 270px;
+    padding: 32px 20px;
+  }
+
+  .vision-card + .vision-card {
+    border-left: none;
+    border-top: 1px solid #ccc4b6;
+  }
+
+  .chairman-image {
+    height: 450px;
+  }
+
+  .chairman-content h3 {
+    font-size: 32px;
+  }
+
+  .quote-mark {
+    font-size: 80px;
+    height: 75px;
+  }
+
+  .about-closing {
+    min-height: 430px;
+  }
+
+  .closing-content h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-hero h1 {
+    font-size: 42px;
+  }
+
+  .company-top h2,
+  .chairman-heading h2,
+  .vision-heading h2 {
+    font-size: 35px;
+  }
+
+  .company-image-wrap {
+    height: 320px;
+  }
+
+  .chairman-image {
+    height: 380px;
+  }
+
+  .hero-bottom {
+    font-size: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-page *,
+  .about-page *::before,
+  .about-page *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,631 @@
+.our-brands {
+  --brand-dark: #142b49;
+  --brand-cream: #f5f2eb;
+  --brand-gold: #e5b354;
+  --brand-muted: #77756e;
+
+  background: var(--brand-cream);
+  color: var(--brand-dark);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.our-brands * {
+  box-sizing: border-box;
+}
+
+.our-brands img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-brands a {
+  text-decoration: none;
+}
+
+.brand-hero {
+  height: 85vh;
+  min-height: 650px;
+  max-height: 850px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #252620;
+  color: white;
+  overflow: hidden;
+}
+
+.brand-hero-image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 24, 45, 0.92),
+      rgba(8, 24, 45, 0.55),
+      rgba(8, 24, 45, 0.15)
+    ),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=90")
+      center / cover no-repeat;
+  opacity: 0.45;
+  animation: brandZoom 12s ease-out forwards;
+}
+
+@keyframes brandZoom {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.brand-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(8, 24, 45, 0.45), transparent 45%);
+}
+
+.brand-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 10%;
+  max-width: 1000px;
+}
+
+.brand-eyebrow,
+.brand-section-label {
+  color: var(--brand-gold);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.brand-hero-content h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(60px, 7.5vw, 98px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -3px;
+  margin: 30px 0;
+}
+
+.brand-hero-content h1 em {
+  color: #e5b354;
+  font-weight: 400;
+}
+
+.brand-hero-content p {
+  max-width: 430px;
+  color: #d0cec6;
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 35px;
+}
+
+.brand-hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  border: 1px solid white;
+  padding: 16px 27px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.brand-hero-link span {
+  color: var(--brand-gold);
+  font-size: 20px;
+}
+
+.brand-hero-link:hover {
+  /* gap: 38px;
+  color: var(--brand-gold); */
+
+  color: #142b49;
+  background: white;
+}
+
+.brand-hero-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: space-between;
+  color: #d0c9bb;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.brand-intro {
+  padding: 110px 10%;
+  background: white;
+}
+
+.brand-intro-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d8d2c7;
+  color: #142b49;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.brand-intro-top span:last-child {
+  color: var(--brand-gold);
+}
+
+.brand-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.75fr;
+  gap: 10%;
+  align-items: center;
+  padding-top: 55px;
+}
+
+.brand-intro-grid h2,
+.brand-collection-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+.brand-intro-grid h2 em,
+.brand-collection-heading h2 em {
+  color: var(--brand-gold);
+}
+
+.brand-intro-grid p {
+  color: var(--brand-muted);
+  font-size: 12px;
+  line-height: 2.1;
+  margin-bottom: 20px;
+}
+
+.brand-collection {
+  padding: 110px 10%;
+  background: white;
+}
+
+.brand-collection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 65px;
+}
+
+.brand-collection-heading h2 {
+  margin-top: 22px;
+}
+
+.brand-collection-heading > p {
+  max-width: 310px;
+  color: var(--brand-muted);
+  font-size: 12px;
+  line-height: 2;
+  padding-bottom: 5px;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 65px 45px;
+  align-items: start;
+}
+
+.brand-card {
+  min-width: 0;
+}
+
+.brand-card:nth-child(even) {
+  margin-top: 100px;
+}
+
+.brand-card-image {
+  height: 390px;
+  position: relative;
+  overflow: hidden;
+  background: #d8d1c4;
+}
+
+.brand-featured .brand-card-image {
+  height: 500px;
+}
+
+.brand-card-image img {
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+
+.brand-card:hover .brand-card-image img {
+  transform: scale(1.07);
+}
+
+.brand-card-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.25),
+    transparent 40%,
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.brand-card-number,
+.brand-card-category {
+  position: absolute;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.brand-card-number {
+  top: 22px;
+  left: 22px;
+}
+
+.brand-card-category {
+  bottom: 22px;
+  left: 22px;
+}
+
+.brand-card-info {
+  padding-top: 24px;
+}
+
+.brand-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cec7ba;
+  padding-bottom: 17px;
+}
+
+.brand-card-title h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.brand-card-title span {
+  color: var(--brand-gold);
+  font-size: 23px;
+  transition: transform 0.3s;
+}
+
+.brand-card:hover .brand-card-title span {
+  transform: translate(5px, -5px);
+}
+
+.brand-card-info p {
+  max-width: 430px;
+  font-size: 11px;
+  line-height: 2;
+  color: var(--brand-muted);
+  margin: 18px 0 22px;
+}
+
+.brand-card-info > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--brand-dark);
+  transition: 0.3s;
+}
+
+.brand-card-info > a span {
+  color: var(--brand-gold);
+  font-size: 17px;
+}
+
+.brand-card-info > a:hover {
+  color: var(--brand-gold);
+  gap: 28px;
+}
+
+.brand-philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--brand-dark);
+  color: white;
+  min-height: 650px;
+}
+
+.brand-philosophy-content {
+  padding: 90px 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-philosophy-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 28px 0;
+}
+
+.brand-philosophy-content h2 em {
+  color: var(--brand-gold);
+}
+
+.brand-philosophy-content > p {
+  color: #c1c0b8;
+  font-size: 12px;
+  line-height: 2.1;
+  max-width: 460px;
+}
+
+.brand-principles {
+  margin-top: 35px;
+  border-top: 1px solid #505048;
+}
+
+.brand-principles > div {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  column-gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #505048;
+}
+
+.brand-principles span {
+  grid-row: span 2;
+  color: var(--brand-gold);
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.brand-principles h4 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+
+.brand-principles p {
+  color: #aaa99f;
+  font-size: 10px;
+  margin: 0;
+}
+
+.brand-philosophy-image {
+  position: relative;
+  min-height: 650px;
+}
+
+.brand-philosophy-image img {
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.brand-philosophy-image > span {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-shadow: 0 1px 5px #222;
+}
+
+.brand-cta {
+  text-align: center;
+  padding: 115px 20px;
+  background: var(--brand-cream);
+}
+
+.brand-cta h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5.5vw, 70px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 25px 0;
+}
+
+.brand-cta h2 em {
+  color: var(--brand-gold);
+}
+
+.brand-cta > p {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--brand-muted);
+  margin-bottom: 35px;
+}
+
+.brand-cta > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid var(--brand-gold);
+  padding: 16px 27px;
+  color: var(--brand-dark);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.brand-cta > a span {
+  color: var(--brand-gold);
+  font-size: 18px;
+}
+
+/* .brand-cta > a:hover {
+  gap: 38px;
+  color: var(--brand-gold);
+} */
+
+.brand-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.brand-reveal.brand-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .brand-intro,
+  .brand-collection {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .brand-card-image {
+    height: 340px;
+  }
+
+  .brand-featured .brand-card-image {
+    height: 430px;
+  }
+
+  .brand-philosophy-content {
+    padding: 70px 8%;
+  }
+}
+
+@media (max-width: 650px) {
+  .brand-hero {
+    min-height: 620px;
+    height: 82vh;
+  }
+
+  .brand-hero-content {
+    padding: 0 7%;
+  }
+
+  .brand-hero-content h1 {
+    font-size: 57px;
+    letter-spacing: -2px;
+  }
+
+  .brand-hero-content p {
+    font-size: 12px;
+  }
+
+  .brand-hero-footer {
+    left: 7%;
+    right: 7%;
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .brand-intro,
+  .brand-collection {
+    padding: 75px 7%;
+  }
+
+  .brand-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  .brand-intro-grid h2,
+  .brand-collection-heading h2 {
+    font-size: 43px;
+  }
+
+  .brand-collection-heading {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .brand-collection-heading > p {
+    margin-top: 20px;
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .brand-card:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .brand-card-image,
+  .brand-featured .brand-card-image {
+    height: 380px;
+  }
+
+  .brand-card-title h3 {
+    font-size: 27px;
+  }
+
+  .brand-philosophy {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-philosophy-image {
+    min-height: 380px;
+  }
+
+  .brand-philosophy-content {
+    padding: 75px 7%;
+  }
+
+  .brand-philosophy-content h2 {
+    font-size: 52px;
+  }
+
+  .brand-cta {
+    padding: 85px 7%;
+  }
+
+  .brand-cta h2 {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .brand-card-image,
+  .brand-featured .brand-card-image {
+    height: 310px;
+  }
+
+  .brand-card-title h3 {
+    font-size: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .our-brands *,
+  .our-brands *::before,
+  .our-brands *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .brand-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
