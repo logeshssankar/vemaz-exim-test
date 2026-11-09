@@ -1,45 +1,100 @@
 import React, { useEffect } from "react";
 import "./Brand.css";
+import brand1 from '../assets/images/brands/brand1.png';
+import brand2 from '../assets/images/brands/brand2.png';
+import brand3 from '../assets/images/brands/brand3.png';
+import brand4 from '../assets/images/brands/brand4.png';
+import brand5 from '../assets/images/brands/brand5.png';
+import brand6 from '../assets/images/brands/brand6.png';
+import brand7 from '../assets/images/brands/brand7.png';
+import brand8 from '../assets/images/brands/brand8.png';
+import brand9 from '../assets/images/brands/brand9.png';
+import brand10 from '../assets/images/brands/brand10.jpg';
+
+
+const brand = [
+  {
+    name: "Brand One",
+    logo: brand1,
+  },
+  {
+    name: "Brand Two",
+    logo: brand2,
+  },    
+  {
+    name: "Brand Three",
+    logo: brand3,
+  },
+  {
+    name: "Brand Four",
+    logo: brand4,
+  },
+  {
+    name: "Brand Five",
+    logo: brand5,
+  },
+  {
+    name: "Brand Six",
+    logo: brand6,
+  },
+  {
+    name: "Brand Seven",
+    logo: brand7,
+  },
+  {
+    name: "Brand Eight",
+    logo: brand8,
+  },
+  {
+    name: "Brand Nine",
+    logo: brand9,
+  },
+  {
+    name: "Brand Ten",
+    logo: brand10,
+  }
+
+];
 
 const brands = [
   {
     number: "01",
-    name: "Brand One",
+    name: "Ashwin Stationery",
     category: "PRODUCTS & COMMERCE",
     description:
-      "Introduce your brand, its identity, its products and the value it brings to customers.",
+      "Ashwin Stationery is your one-stop stationery store, featuring a wide range of pens, notebooks, pencils, markers, and much more at competitive prices.",
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85",
+      brand1,
     featured: true,
   },
   {
     number: "02",
-    name: "Brand Two",
+    name: "Indian Agri Products",
     category: "LIFESTYLE & PRODUCTS",
     description:
-      "Showcase the brand's unique offering, product range and market positioning.",
+      "As exporters, we, Raj Exim, are constantly raising the bar and pushing our boundaries to offer our clients, products and services that are as diverse and unique as they are of the highest standards imaginable.",
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=85",
+      brand6,
     featured: false,
   },
   {
     number: "03",
-    name: "Brand Three",
+    name: "Coffee India",
     category: "INNOVATION & QUALITY",
     description:
-      "Highlight what makes this brand distinctive and how it serves its customers.",
+      "We, at Raj Exim, value our clients and endeavor to not only foresee their demands but also provide world-class services along with products. We are one of the leading exporters marching ahead with premium quality products of international standards.",
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85",
+      brand3,
     featured: false,
   },
   {
     number: "04",
-    name: "Brand Four",
+    name: "Comfort Furniture",
     category: "EVERYDAY ESSENTIALS",
     description:
-      "Present the brand's products, identity and commitment to quality.",
+      "SURYA HOMEWARE is a trusted Indian manufacturer and exporter of high-quality plastic furniture, offering a wide range of durable chairs, tables, and stools for home, commercial, and outdoor use. ",
     image:
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1000&q=85",
+      brand4,
     featured: false,
   },
 ];
@@ -88,12 +143,12 @@ const OurBrands = () => {
           </p>
 
           <a href="#brand-collection" className="brand-hero-link">
-            EXPLORE OUR BRANDS <span>↘</span>
+            EXPLORE OUR BRANDS
           </a>
         </div>
 
         <div className="brand-hero-footer">
-          <span>04 — OUR BRAND PORTFOLIO</span>
+          <span>OUR BRAND PORTFOLIO</span>
           <span>BUILT ON QUALITY · DRIVEN BY TRUST</span>
         </div>
       </section>
@@ -101,7 +156,7 @@ const OurBrands = () => {
       <section className="brand-intro">
         <div className="brand-intro-top brand-reveal">
           <span>THE VEMAZ COLLECTION</span>
-          <span>01 / BRAND IDENTITY</span>
+          <span>BRAND IDENTITY</span>
         </div>
 
         <div className="brand-intro-grid brand-reveal">
@@ -131,7 +186,7 @@ const OurBrands = () => {
         <div className="brand-collection-heading brand-reveal">
           <div>
             <span className="brand-section-label">
-              02 / DISCOVER OUR PORTFOLIO
+               DISCOVER OUR PORTFOLIO
             </span>
 
             <h2>
@@ -185,7 +240,7 @@ const OurBrands = () => {
 
       <section className="brand-philosophy">
         <div className="brand-philosophy-content brand-reveal">
-          <span className="brand-section-label">03 / WHAT DEFINES US</span>
+          <span className="brand-section-label">WHAT DEFINES US</span>
 
           <h2>
             A promise
@@ -201,19 +256,19 @@ const OurBrands = () => {
 
           <div className="brand-principles">
             <div>
-              <span>01</span>
+              <span><i class="fa-solid fa-medal"></i></span>
               <h4>Quality</h4>
               <p>A commitment to high standards.</p>
             </div>
 
             <div>
-              <span>02</span>
+              <span><i class="fa-solid fa-user-tag"></i></span>
               <h4>Identity</h4>
               <p>Distinctive brands with purpose.</p>
             </div>
 
             <div>
-              <span>03</span>
+              <span><i class="fa-solid fa-handshake"></i></span>
               <h4>Trust</h4>
               <p>Relationships built to last.</p>
             </div>

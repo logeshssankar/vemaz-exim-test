@@ -291,6 +291,19 @@
   margin-top: 18px;
 }
 
+.contact-social{
+  display: inline-block;
+  color: #e5b354;
+}
+
+.socila-icon i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
 .contact-social a {
   font-size: 12px;
   font-weight: 600;

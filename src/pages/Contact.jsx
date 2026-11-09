@@ -72,7 +72,7 @@ const Contact = () => {
           </p>
 
           <a href="#contact-form" className="contact-hero-link">
-            START A CONVERSATION <span>↗</span>
+            START A CONVERSATION 
           </a>
         </div>
 
@@ -84,7 +84,7 @@ const Contact = () => {
 
       <section className="contact-intro">
         <div className="contact-intro-label">
-          <span>01 / GET IN TOUCH</span>
+          <span>GET IN TOUCH</span>
         </div>
 
         <div className="contact-intro-content">
@@ -152,20 +152,22 @@ const Contact = () => {
 
           <div className="contact-social">
             <span>CONNECT WITH US</span>
-            <div>
+            <div className="socila-icon">
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn ↗
+                <i className="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
               </a>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Instagram ↗
+               <i className="fab fa-instagram"></i>
+                <span>Instagram</span> 
               </a>
             </div>
           </div>

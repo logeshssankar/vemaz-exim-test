@@ -83,12 +83,11 @@ const GlobalPresence = () => {
 
           <a href="#gp-network" className="gp-hero-link">
             EXPLORE OUR GLOBAL NETWORK
-            <span>↘</span>
           </a>
         </div>
 
         <div className="gp-hero-bottom">
-          <span>05 — GLOBAL CONNECTIONS</span>
+          <span>GLOBAL CONNECTIONS</span>
           <span>ONE WORLD · MANY OPPORTUNITIES</span>
         </div>
 
@@ -100,7 +99,7 @@ const GlobalPresence = () => {
       <section className="gp-intro">
         <div className="gp-intro-top gp-reveal">
           <span>BEYOND GEOGRAPHICAL BOUNDARIES</span>
-          <span>01 / OUR REACH</span>
+          <span>OUR REACH</span>
         </div>
 
         <div className="gp-intro-content gp-reveal">
@@ -130,7 +129,7 @@ const GlobalPresence = () => {
       <section className="gp-network" id="gp-network">
         <div className="gp-network-heading gp-reveal">
           <div>
-            <span className="gp-section-label">02 / THE WORLD CONNECTED</span>
+            <span className="gp-section-label">THE WORLD CONNECTED</span>
 
             <h2>
               One network.
@@ -366,7 +365,7 @@ const GlobalPresence = () => {
         </div>
 
         <div className="gp-approach-content gp-reveal">
-          <span className="gp-section-label">03 / HOW WE CONNECT</span>
+          <span className="gp-section-label">HOW WE CONNECT</span>
 
           <h2>
             Beyond borders.
@@ -381,7 +380,7 @@ const GlobalPresence = () => {
 
           <div className="gp-approach-list">
             <div>
-              <span>01</span>
+          <i class="fa-solid fa-chart-pie"></i>
               <div>
                 <h4>Market Understanding</h4>
                 <p>
@@ -392,7 +391,7 @@ const GlobalPresence = () => {
             </div>
 
             <div>
-              <span>02</span>
+              <i class="fa-solid fa-handshake"></i>
               <div>
                 <h4>Business Partnerships</h4>
                 <p>
@@ -403,7 +402,7 @@ const GlobalPresence = () => {
             </div>
 
             <div>
-              <span>03</span>
+              <i class="fa-solid fa-globe"></i>
               <div>
                 <h4>Trade Excellence</h4>
                 <p>

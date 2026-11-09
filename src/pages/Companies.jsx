@@ -1,35 +1,91 @@
 import React, { useEffect } from "react";
 import "./Companies.css";
+import brand1 from '../assets/images/brands/brand1.png';
+import brand2 from '../assets/images/brands/brand2.png';
+import brand3 from '../assets/images/brands/brand3.png';
+import brand4 from '../assets/images/brands/brand4.png';
+import brand5 from '../assets/images/brands/brand5.png';
+import brand6 from '../assets/images/brands/brand6.png';
+import brand7 from '../assets/images/brands/brand7.png';
+import brand8 from '../assets/images/brands/brand8.png';
+import brand9 from '../assets/images/brands/brand9.png';
+import brand10 from'../assets/images/brands/brand10.jpg';
+
+
+const brands = [
+  {
+    name: "Brand One",
+    logo: brand1,
+  },
+  {
+    name: "Brand Two",
+    logo: brand2,
+  },    
+  {
+    name: "Brand Three",
+    logo: brand3,
+  },
+  {
+    name: "Brand Four",
+    logo: brand4,
+  },
+  {
+    name: "Brand Five",
+    logo: brand5,
+  },
+  {
+    name: "Brand Six",
+    logo: brand6,
+  },
+  {
+    name: "Brand Seven",
+    logo: brand7,
+  },
+  {
+    name: "Brand Eight",
+    logo: brand8,
+  },
+  {
+    name: "Brand Nine",
+    logo: brand9,
+  },
+
+  {
+    name: "Brand Ten",
+    logo: brand10,
+  }
+
+];
+
+
 
 const companies = [
   {
     number: "01",
     category: "INTERNATIONAL TRADE",
-    name: "Company Name One",
+    name: "Asian Consumables",
     description:
-      "Add the company's business profile, products, services and contribution to the VEMAZ EXIM business network.",
-    image:
-      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1100&q=85",
+      "We are an ISO 9001 – 2015 certified Company are one of the Leading and rapidly growing Companies in the Export Business. We act as a One-Stop Destination for our customers to choose the right product. We are an Exporter of 100% Cotton Yarn, 100% Polyester yarn, 100% Viscose Yarn, Blended Yarn, Textile Fabrics, Shirting & Pants.",
+    image:brand2,
     className: "company-large",
   },
   {
     number: "02",
     category: "BUSINESS & DISTRIBUTION",
-    name: "Company Name Two",
+    name: "Glovel Matches LLP",
     description:
-      "Introduce the company's operations, market expertise and the value it brings to its customers.",
+      "Glovel Matches LLP is a huge exporter of safety matches. We supply a variety of matches which include House Hold, Kitchen Matches, Wax Matches, Barbeque Matches, Promotional Matches, etc. based on our customer’s needs. As a result of our commitment to quality and dedicated services, we have gained a prominent image in international markets and regular customers as well.",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1100&q=85",
+      brand5,
     className: "company-small",
   },
   {
     number: "03",
     category: "GLOBAL SOLUTIONS",
-    name: "Company Name Three",
+    name: "Agrimine",
     description:
-      "Showcase the company's capabilities, business activities and role in creating new opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85",
+      "We Agrimine Products LLP – Exporter of Mixed groceries, Whole Spices, Lentils, ready to eat, Masala powders, instant mixes, curry paste for authentic Indian cuisine that covers the entire customer basket with highest quality. We ensure that customer expectations are met by offering a diverse range at the best prices with customized packing in buyers brand.",
+    image:brand10,
     className: "company-small",
   },
 ];
@@ -76,12 +132,12 @@ const OurCompanies = () => {
           </p>
 
           <a href="#company-list" className="oc-hero-link">
-            EXPLORE OUR COMPANIES <span>↘</span>
+            EXPLORE OUR COMPANIES
           </a>
         </div>
 
         <div className="oc-hero-index">
-          <span>03 — BUSINESS NETWORK</span>
+          <span>BUSINESS NETWORK</span>
           <span>VEMAZ EXIM</span>
         </div>
       </section>
@@ -89,7 +145,7 @@ const OurCompanies = () => {
       <section className="oc-intro">
         <div className="oc-intro-label oc-reveal">
           <span>OUR BUSINESS ECOSYSTEM</span>
-          <span>01 / 03</span>
+          {/* <span>01 / 03</span> */}
         </div>
 
         <div className="oc-intro-content oc-reveal">
@@ -117,7 +173,7 @@ const OurCompanies = () => {
       <section className="oc-portfolio" id="company-list">
         <div className="oc-portfolio-heading oc-reveal">
           <div>
-            <span className="oc-section-tag">02 / OUR PORTFOLIO</span>
+            <span className="oc-section-tag">OUR PORTFOLIO</span>
 
             <h2>
               Meet the
@@ -170,7 +226,7 @@ const OurCompanies = () => {
         <div className="oc-philosophy-image"></div>
 
         <div className="oc-philosophy-content oc-reveal">
-          <span className="oc-section-tag">03 / OUR APPROACH</span>
+          <span className="oc-section-tag">OUR APPROACH</span>
 
           <h2>
             Stronger
@@ -187,17 +243,17 @@ const OurCompanies = () => {
 
           <div className="oc-values">
             <div>
-              <span>01</span>
+              <i className="fa-regular fa-eye"></i>
               <p>Shared vision</p>
             </div>
 
             <div>
-              <span>02</span>
+              <i className="fa-solid fa-arrow-trend-up"></i>
               <p>Collective growth</p>
             </div>
 
             <div>
-              <span>03</span>
+              <i className="fa-solid fa-user-plus"></i>
               <p>Lasting relationships</p>
             </div>
           </div>

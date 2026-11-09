@@ -541,6 +541,12 @@
   border-top: 1px solid #cfc8ba;
 }
 
+.gp-approach-list i{
+  display: inline-block;
+  color:#e5b354;
+  font-size: 22px;
+}
+
 .gp-approach-list > div {
   display: grid;
   grid-template-columns: 35px 1fr;

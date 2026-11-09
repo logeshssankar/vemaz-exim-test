@@ -46,14 +46,14 @@ const About = () => {
           </p>
 
           <a href="#company-story" className="about-explore">
-            DISCOVER OUR STORY <span>↗</span>
+            DISCOVER OUR STORY
           </a>
         </div>
 
         <div className="hero-side-text">GLOBAL TRADE · TRUSTED PARTNERSHIP</div>
 
         <div className="hero-bottom">
-          <span>01 — OUR IDENTITY</span>
+          <span>OUR IDENTITY</span>
           <span>SCROLL TO EXPLORE ↓</span>
         </div>
       </section>
@@ -61,7 +61,7 @@ const About = () => {
       <section className="company-section" id="company-story">
         <div className="company-top reveal">
           <div className="section-label">
-            <span>01</span>
+            {/* <span></span> */}
             <span>THE COMPANY</span>
           </div>
 
@@ -133,7 +133,7 @@ const About = () => {
 
         <div className="vision-grid">
           <div className="vision-card reveal">
-            <span className="vision-number">01 / VISION</span>
+            <span className="vision-number">VISION</span>
             <div className="vision-symbol">◎</div>
             <h3>Our Vision</h3>
             <p>
@@ -145,7 +145,7 @@ const About = () => {
           </div>
 
           <div className="vision-card mission-card reveal">
-            <span className="vision-number">02 / MISSION</span>
+            <span className="vision-number">MISSION</span>
             <div className="vision-symbol">↗</div>
             <h3>Our Mission</h3>
             <p>
@@ -157,7 +157,7 @@ const About = () => {
           </div>
 
           <div className="vision-card reveal">
-            <span className="vision-number">03 / VALUES</span>
+            <span className="vision-number">VALUES</span>
             <div className="vision-symbol">✳</div>
             <h3>Our Values</h3>
             <p>
@@ -172,7 +172,7 @@ const About = () => {
       <section className="chairman-section">
         <div className="chairman-heading reveal">
           <div className="section-label">
-            <span>02</span>
+            {/* <span>02</span> */}
             <span>LEADERSHIP & VISION</span>
           </div>
 
