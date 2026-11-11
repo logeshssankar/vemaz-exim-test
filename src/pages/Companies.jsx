@@ -117,7 +117,7 @@ const OurCompanies = () => {
         <div className="oc-hero-background"></div>
         <div className="oc-hero-shade"></div>
 
-        <div className="oc-hero-content">
+        <div className="oc-hero-content oc-reveal">
           <span className="oc-eyebrow">VEMAZ EXIM / OUR BUSINESS NETWORK</span>
 
           <h1>
@@ -260,7 +260,7 @@ const OurCompanies = () => {
         </div>
       </section>
 
-      <section className="oc-closing">
+      <section className="oc-closing oc-reveal">
         <span className="oc-section-tag">LET'S BUILD SOMETHING TOGETHER</span>
 
         <h2>

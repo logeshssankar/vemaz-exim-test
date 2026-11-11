@@ -30,7 +30,7 @@ const About = () => {
 
         <div className="about-hero-overlay"></div>
 
-        <div className="about-hero-content">
+        <div className="about-hero-content reveal">
           <span className="eyebrow">VEMAZ EXIM / WHO WE ARE</span>
 
           <h1>

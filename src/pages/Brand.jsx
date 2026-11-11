@@ -126,7 +126,7 @@ const OurBrands = () => {
         <div className="brand-hero-image"></div>
         <div className="brand-hero-overlay"></div>
 
-        <div className="brand-hero-content">
+        <div className="brand-hero-content brand-reveal">
           <span className="brand-eyebrow">VEMAZ EXIM / OUR BRANDS</span>
 
           <h1>
@@ -286,7 +286,7 @@ const OurBrands = () => {
         </div>
       </section>
 
-      <section className="brand-cta">
+      <section className="brand-cta brand-reveal">
         <span className="brand-section-label">
           THE NEXT CHAPTER STARTS HERE
         </span>

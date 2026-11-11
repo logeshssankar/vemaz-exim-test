@@ -68,7 +68,7 @@ const GlobalPresence = () => {
         <div className="gp-hero-image"></div>
         <div className="gp-hero-overlay"></div>
 
-        <div className="gp-hero-content">
+        <div className="gp-hero-content gp-reveal">
           <span className="gp-eyebrow">VEMAZ EXIM / GLOBAL PRESENCE</span>
 
           <h1>
@@ -416,7 +416,7 @@ const GlobalPresence = () => {
         </div>
       </section>
 
-      <section className="gp-closing">
+      <section className="gp-closing ">
         <span className="gp-section-label">YOUR NEXT GLOBAL CONNECTION</span>
 
         <h2>

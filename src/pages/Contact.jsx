@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Contact.css";
 
 const initialForm = {
@@ -13,6 +13,28 @@ const initialForm = {
 const Contact = () => {
   const [formData, setFormData] = useState(initialForm);
   const [submitted, setSubmitted] = useState(false);
+
+
+   useEffect(() => {
+      const elements = document.querySelectorAll(".reveal");
+  
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+  
+      elements.forEach((element) => observer.observe(element));
+  
+      return () => observer.disconnect();
+    }, []);
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -54,7 +76,7 @@ const Contact = () => {
         <div className="contact-hero-image"></div>
         <div className="contact-hero-overlay"></div>
 
-        <div className="contact-hero-content">
+        <div className="contact-hero-content reveal">
           <span className="contact-eyebrow">LET'S BUILD SOMETHING GLOBAL</span>
 
           <h1>
@@ -83,11 +105,11 @@ const Contact = () => {
       </section>
 
       <section className="contact-intro">
-        <div className="contact-intro-label">
+        <div className="contact-intro-label reveal">
           <span>GET IN TOUCH</span>
         </div>
 
-        <div className="contact-intro-content">
+        <div className="contact-intro-content reveal">
           <h2>
             Let's connect.
             <br />
@@ -103,7 +125,7 @@ const Contact = () => {
       </section>
 
       <section className="contact-main" id="contact-form">
-        <div className="contact-details">
+        <div className="contact-details reveal">
           <span className="contact-section-label">CONTACT INFORMATION</span>
 
           <h2>
@@ -174,7 +196,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-panel">
-          <div className="contact-form-heading">
+          <div className="contact-form-heading reveal">
             <span className="contact-section-label">SEND AN ENQUIRY</span>
             <h2>Tell us what you have in mind.</h2>
             <p>
@@ -184,7 +206,7 @@ const Contact = () => {
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="contact-form-row">
+            <div className="contact-form-row" reveal>
               <div className="contact-field">
                 <label htmlFor="contact-name">Full name *</label>
                 <input
@@ -212,7 +234,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="contact-form-row">
+            <div className="contact-form-row reveal">
               <div className="contact-field">
                 <label htmlFor="contact-email">Email address *</label>
                 <input
@@ -239,7 +261,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="contact-field">
+            <div className="contact-field reveal">
               <label htmlFor="contact-enquiry">
                 What would you like to discuss? *
               </label>
@@ -264,7 +286,7 @@ const Contact = () => {
               </select>
             </div>
 
-            <div className="contact-field">
+            <div className="contact-field reveal">
               <label htmlFor="contact-message">Your message *</label>
               <textarea
                 id="contact-message"
@@ -278,7 +300,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="contact-submit-btn">
+            <button type="submit" className="contact-submit-btn reveal">
               SEND YOUR ENQUIRY <span>↗</span>
             </button>
 
@@ -297,7 +319,7 @@ const Contact = () => {
       </section>
 
       <section className="contact-location">
-        <div className="contact-location-content">
+        <div className="contact-location-content reveal">
           <span className="contact-section-label">OUR LOCATION</span>
           <h2>
             A local foundation.
@@ -319,7 +341,7 @@ const Contact = () => {
           </a>
         </div>
 
-        <div className="contact-location-visual">
+        <div className="contact-location-visual reveal">
           <div className="contact-map-card">
             <span className="map-coordinate-label">OUR OFFICE LOCATION</span>
             <div className="map-pin">

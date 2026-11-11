@@ -1,66 +1,86 @@
-import React from "react";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
-    <nav className="navbar">
-      <div className="logo">
-        <Link to="/">
-          VEMAZ<span> EXIM</span>
-        </Link>
-      </div>
+    const closeMenu = () => setMenuOpen(false);
 
-      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li>
-          <Link to="/" onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
-        </li>
+    return (
+        <nav className="navbar">
 
-        <li>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            About Us
-          </Link>
-        </li>
+            <div className="logo">
+                <NavLink to="/" onClick={closeMenu}>
+                    VEMAZ<span> EXIM</span>
+                </NavLink>
+            </div>
 
-        <li>
-          <Link to="/companies" onClick={() => setMenuOpen(false)}>
-            Our Companies
-          </Link>
-        </li>
+            <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-        <li>
-          <Link to="/brands" onClick={() => setMenuOpen(false)}>
-            Our Brands
-          </Link>
-        </li>
+                <li>
+                    <NavLink to="/" end className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } onClick={closeMenu}>
+                        Home
+                    </NavLink>
+                </li>
 
-        <li>
-          <Link to="/global-presence" onClick={() => setMenuOpen(false)}>
-            Global Presence
-          </Link>
-        </li>
+                <li>
+                    <NavLink to="/about" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } onClick={closeMenu}>
+                        About Us
+                    </NavLink>
+                </li>
 
-        <li>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>
-            Contact Us
-          </Link>
-        </li>
-      </ul>
+                <li>
+                    <NavLink to="/companies" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } onClick={closeMenu}>
+                        Our Companies
+                    </NavLink>
+                </li>
 
-      <button
-        className="menu-toggle"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation menu"
-        aria-expanded={menuOpen}
-      >
-        {menuOpen ? "X" : "☰"}
-      </button>
-    </nav>
-  );
+                <li>
+                    <NavLink to="/brands" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } onClick={closeMenu}>
+                        Our Brands
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/global-presence" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } onClick={closeMenu}>
+                        Global Presence
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/contact" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } onClick={closeMenu}>
+                        Contact Us
+                    </NavLink>
+                </li>
+
+            </ul>
+
+            <button
+                className="menu-toggle"
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle navigation menu"
+                aria-expanded={menuOpen}
+                type="button"
+            >
+                {menuOpen ? "✕" : "☰"}
+            </button>
+
+        </nav>
+    );
 }
+
 export default Navbar;

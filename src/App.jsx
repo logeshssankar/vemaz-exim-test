@@ -12,6 +12,7 @@ import Companies from './pages/Companies'
 import Brands from './pages/Brand'
 import GlobalPresence from './pages/GlobalPresence'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -40,6 +41,7 @@ function App() {
     <BrowserRouter>
 
     <Navbar />
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />

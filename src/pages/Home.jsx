@@ -353,7 +353,7 @@ function Home() {
               </div>
             </div>
 
-            <Link to="/contact" className="services-button">
+            <Link to="/contact" className="services-button reveal">
               Let's Build a Partnership
               <i className="fas fa-arrow-right"></i>
             </Link>

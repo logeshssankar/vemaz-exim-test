@@ -273,7 +273,7 @@
   margin-top: 20px;
   border: 1px solid #142b49;
   padding: 15px;
-  width: 45%;
+  width: 42%;
   border-radius: 8px;
   background: #142b49;
 }
@@ -700,7 +700,7 @@
   }
 
   .contact-social{
-    width: 55%;
+    width: 53%;
   }
 
   .contact-form-panel {
@@ -728,4 +728,18 @@
   .contact-map-card {
     min-height: 280px;
   }
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
