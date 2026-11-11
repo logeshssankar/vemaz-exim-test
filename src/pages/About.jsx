@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
+import container from "../assets/images/container1.jpg"
 
 const About = () => {
   useEffect(() => {
@@ -46,7 +47,7 @@ const About = () => {
           </p>
 
           <a href="#company-story" className="about-explore">
-            DISCOVER OUR STORY
+            Discover Our Story
           </a>
         </div>
 
@@ -75,7 +76,7 @@ const About = () => {
         <div className="company-grid">
           <div className="company-image-wrap reveal">
             <img
-              src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1200&q=85"
+              src={container}
               alt="International shipping and logistics"
             />
 

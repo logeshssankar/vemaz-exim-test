@@ -143,7 +143,7 @@ const OurBrands = () => {
           </p>
 
           <a href="#brand-collection" className="brand-hero-link">
-            EXPLORE OUR BRANDS
+            Explore Our Brands
           </a>
         </div>
 

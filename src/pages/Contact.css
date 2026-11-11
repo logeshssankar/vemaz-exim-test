@@ -130,20 +130,20 @@
 }
 
 .contact-hero-link {
-  display: inline-flex;
-  gap: 28px;
-  align-items: center;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 1.7px;
-  font-weight: 600;
+   display: inline-block;
   padding: 16px 27px;
-  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+ border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .contact-hero-link:hover {
   background: white;
   color: #142b49;
+   transform: translateY(-3px);
 }
 
 .contact-hero-link span {
@@ -697,6 +697,10 @@
 
   .contact-details h2 {
     font-size: 40px;
+  }
+
+  .contact-social{
+    width: 55%;
   }
 
   .contact-form-panel {

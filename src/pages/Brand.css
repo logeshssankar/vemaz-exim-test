@@ -46,7 +46,7 @@
       rgba(8, 24, 45, 0.55),
       rgba(8, 24, 45, 0.15)
     ),
-    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=90")
+    url(../assets/images/baner/baner3.jpg)
       center / cover no-repeat;
   opacity: 0.45;
   animation: brandZoom 12s ease-out forwards;
@@ -106,15 +106,14 @@
 }
 
 .brand-hero-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 25px;
-  color: white;
-  border: 1px solid white;
+    display: inline-block;
   padding: 16px 27px;
-  font-size: 10px;
-  letter-spacing: 2px;
-  transition: 0.3s;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 .brand-hero-link span {
@@ -128,6 +127,7 @@
 
   color: #142b49;
   background: white;
+   transform: translateY(-3px);
 }
 
 .brand-hero-footer {

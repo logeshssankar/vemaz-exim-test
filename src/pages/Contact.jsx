@@ -72,7 +72,7 @@ const Contact = () => {
           </p>
 
           <a href="#contact-form" className="contact-hero-link">
-            START A CONVERSATION 
+            Start a Conversation 
           </a>
         </div>
 

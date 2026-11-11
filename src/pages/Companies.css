@@ -46,7 +46,7 @@
       rgba(8, 24, 45, 0.55),
       rgba(8, 24, 45, 0.15)
     ),
-    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=90")
+    url("../assets/images/baner/baner2.jpg")
       center / cover no-repeat;
   opacity: 0.55;
   transform: scale(1.02);
@@ -107,15 +107,14 @@
 }
 
 .oc-hero-link {
-  display: inline-flex;
-  gap: 25px;
-  align-items: center;
+  display: inline-block;
   padding: 16px 27px;
-  border: 1px solid white;
-  color: white;
-  font-size: 10px;
-  letter-spacing: 2px;
-  transition: 0.3s;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 .oc-hero-link span {
@@ -129,6 +128,7 @@
 
   color: #142b49;
   background: white;
+   transform: translateY(-3px);
 }
 
 .oc-hero-index {

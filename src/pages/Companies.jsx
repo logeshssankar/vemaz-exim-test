@@ -132,7 +132,7 @@ const OurCompanies = () => {
           </p>
 
           <a href="#company-list" className="oc-hero-link">
-            EXPLORE OUR COMPANIES
+            Explore Our Companies
           </a>
         </div>
 

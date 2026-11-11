@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GlobalPresence.css";
+import global from "../assets/images/global1.jpg";
 
 const regions = [
   {
@@ -82,7 +83,7 @@ const GlobalPresence = () => {
           </p>
 
           <a href="#gp-network" className="gp-hero-link">
-            EXPLORE OUR GLOBAL NETWORK
+            Explore Our Global Network
           </a>
         </div>
 
@@ -356,7 +357,7 @@ const GlobalPresence = () => {
       <section className="gp-approach">
         <div className="gp-approach-image gp-reveal">
           <img
-            src="https://images.unsplash.com/photo-1494412574643-35d324698f65?auto=format&fit=crop&w=1200&q=85"
+            src={global}
             alt="International cargo transportation"
             loading="lazy"
           />
